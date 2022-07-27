@@ -1,9 +1,10 @@
+import { Link } from 'react-scroll';
 import herobg from "../assets/herobg.jpg"
 import decor from "../assets/decor.png"
 
 function Slide1() {
   return (
-    <div name="slide" className="flex flex-col-reverse md:flex-row items-center h-[650px] max-w-[920px] gap-[100px] md:mx-auto md:px-[70px] text-center md:text-left">
+    <div name="slide" className="flex flex-col-reverse md:flex-row items-center h-[650px] max-w-[920px] gap-[100px] md:mx-auto md:px-[70px] 2xl:px-0 text-center md:text-left">
       <div className="max-w-[453px] flex flex-col gap-[32px]">
         <div className="flex flex-col gap-[8px]">
         <p className="fontFam text-white text-[23px]">Chase the new Flavour</p>
@@ -11,7 +12,9 @@ function Slide1() {
         </div>
         <p className="fontFam text-[#dcca87] text-[30px] xl:text-[60px] font-bold">The Key To Fine Dining</p>
         <p className="text-[#AAAAAA]">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
-        <button className="fontFam bg-[#dcca87] w-[169px] py-[8px] px-[32px] font-bold mx-auto md:mx-0">Explore Menu</button>
+        <Link to="menu" smooth={true} duration={500} className="cursor-pointer">
+        <p className="fontFam bg-[#dcca87] w-[169px] py-[8px] px-[32px] font-bold text-center mx-auto md:mx-0">Explore Menu</p>
+        </Link>
       </div>
       <div className="relative h-[180px] md:h-[367px] w-[180px] md:w-[367px]">
         <div className="h-[180px] md:h-[367px] w-[180px] md:w-[367px] overflow-hidden ">

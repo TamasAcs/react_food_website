@@ -3,6 +3,7 @@ import aboutBg from "../assets/aboutBg.png"
 import G from "../assets/G.png"
 import knife from "../assets/aboutImg.png"
 import decor from "../assets/decor.png"
+import { Link } from "react-scroll";
 
 function About() {
   const isDesktop = useMediaQuery(breakPoints.md);
@@ -19,7 +20,9 @@ function About() {
         <p className="fontFam text-[#dcca87] font-semibold text-[50px] md:text-[64px]">About Us</p>
         <img src={decor} alt="/" className="w-[40px] rotate-180"/>
         <p className="text-[#AAAAAA] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-        <button className="fontFam bg-[#dcca87] w-[169px] py-[8px] px-[32px] font-bold">Explore Menu</button>
+       <Link to="aboutChef" smooth={true} duration={500} className="cursor-pointer">
+        <p className="fontFam bg-[#dcca87] w-[169px] py-[8px] px-[32px] font-bold text-center mx-auto md:mx-0">Know More</p>
+        </Link>
       </div>
       {isDesktop ? 
       <img src={knife} alt="" />
@@ -28,7 +31,9 @@ function About() {
       <p className="fontFam text-[#dcca87] font-semibold text-[50px] md:text-[64px]">Our History</p>
         <img src={decor} alt="/" className="w-[40px]"/>
         <p className="text-[#AAAAAA] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-        <button className="fontFam bg-[#dcca87] w-[169px] py-[8px] px-[32px] font-bold">Explore Menu</button>
+       <Link to="aboutChef" smooth={true} duration={500} className="cursor-pointer">
+        <p className="fontFam bg-[#dcca87] w-[169px] py-[8px] px-[32px] font-bold text-center mx-auto md:mx-0">Explore Menu</p>
+        </Link>
       </div>
     </div>
     </div>
