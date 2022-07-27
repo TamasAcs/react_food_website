@@ -19,7 +19,7 @@ function Hero() {
       className="grid grid-cols-6 md:grid-cols-14 gap-x-[32px] bg-[#0c0b08] px-[1rem] md:px-[0.5rem] pb-[150px] overflow-hidden"
     >
       {isDesktop ? 
-      <div className="col-start-2 col-end-2 items-center flex flex-row -rotate-90 gap-[40px] text-white">
+      <div className="col-start-1 col-end-1 items-center flex flex-row -rotate-90 gap-[40px] text-white">
         <Link to="menu" smooth={true} duration={500} className="cursor-pointer">
           #Bar
         </Link>
@@ -28,12 +28,12 @@ function Hero() {
         </Link>
       </div> : null}
 
-<div className="col-start-1 md:col-start-3 col-end-13 my-auto">
+<div className="col-span-full xl:col-start-2 xl:col-end-13 my-auto">
       <Swiper
         pagination={{
           type: "fraction"
         }}
-        navigation={false}
+        navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper mt-[50px] md:mt-0 md:h-[650px] !pb-[50px]"
       >

@@ -3,7 +3,7 @@ import decor from "../assets/decor.png"
 
 function Slide1() {
   return (
-    <div name="slide" className="flex flex-col-reverse md:flex-row items-center h-[650px] max-w-[920px] md:mr-[50px] gap-[100px] lg:gap-[180px] pr-[10px] text-center md:text-left">
+    <div name="slide" className="flex flex-col-reverse md:flex-row items-center h-[650px] max-w-[920px] gap-[100px] md:mx-auto md:px-[70px] text-center md:text-left">
       <div className="max-w-[453px] flex flex-col gap-[32px]">
         <div className="flex flex-col gap-[8px]">
         <p className="fontFam text-white text-[23px]">Chase the new Flavour</p>

@@ -14,6 +14,12 @@ color: #F5EFDB;
         margin-left: -150px;
     }
 }
+.swiper-button-prev{
+    color:#dcca87 !important;
+}
+.swiper-button-next{
+    color:#dcca87 !important;
+}
 .Hurricane{
 font-family: 'Hurricane', cursive;
 }
