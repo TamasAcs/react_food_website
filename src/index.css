@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.fontFam{
+font-family: 'Cormorant Upright', serif
+}
+.swiper-pagination{
+color: #F5EFDB;
+}
+@media screen and(max-width:768px){
+    .swiper-pagination{
+        margin-left: -150px;
+    }
+}
+.Hurricane{
+font-family: 'Hurricane', cursive;
+}
+.OpenSans{
+font-family: 'Open Sans', sans-serif;
+}
